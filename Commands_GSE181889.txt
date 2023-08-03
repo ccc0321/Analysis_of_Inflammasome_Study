@@ -57,31 +57,33 @@ STAR --runMode genomeGenerate --runThreadN 8 --genomeDir ./ --genomeFastaFiles H
 # "STAR" version 2.7.9a
 # Ran on 09/05/2023
 
-mkdir Alignment 
+mkdir sra_files
+mv SRR* ./sra_files/
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415022_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415022_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415023_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415023_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415022_trimmed.fastq --outFileNamePrefix SRR15415022_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415024_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415024_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415023_trimmed.fastq --outFileNamePrefix SRR15415023_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415025_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415025_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415024_trimmed.fastq --outFileNamePrefix SRR15415024_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415026_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415026_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415025_trimmed.fastq --outFileNamePrefix SRR15415025_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415027_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415027_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415026_trimmed.fastq --outFileNamePrefix SRR15415026_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415028_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415028_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415027_trimmed.fastq --outFileNamePrefix SRR15415027_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415029_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415029_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415028_trimmed.fastq --outFileNamePrefix SRR15415028_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415030_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415030_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415029_trimmed.fastq --outFileNamePrefix SRR15415029_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415031_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415031_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415030_trimmed.fastq --outFileNamePrefix SRR15415030_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415032_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415032_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415031_trimmed.fastq --outFileNamePrefix SRR15415031_
 
-STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./SRR15415033_trimmed.fastq --outFileNamePrefix ./Alignments/SRR15415033_
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415032_trimmed.fastq --outFileNamePrefix SRR15415032_
+
+STAR --runMode alignReads --runThreadN 8 --genomeDir ../reference --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --outReadsUnmapped Fastx --sjdbGTFfile ../reference/Homo_sapiens.GRCh38.109.gtf --readFilesIn ./sra_files/SRR15415033_trimmed.fastq --outFileNamePrefix SRR15415033_
 
 
 ### All_Samples ###
