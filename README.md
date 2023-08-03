@@ -8,4 +8,4 @@ The pipelines used for RNA-seq data analysis:
 
 [4] GSE154345: Identification of pharmacologic inhibitors and activators of IL-4-induced macrophage polarization [PBMC RNA-seq] (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154345).
 
-[5] GSE154346: Identification of pharmacologic inhibitors and activators of IL-4-induced macrophage pola
+[5] GSE154346: Identification of pharmacologic inhibitors and activators of IL-4-induced macrophage  polarization [THP-1 RNA-seq] (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154346).
